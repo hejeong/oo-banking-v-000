@@ -38,4 +38,14 @@ class BankAccount
   def self.all
     @@accounts
   end
+  
+  def self.find_account(name)
+    @@accounts.detect do |account|
+      if account.name == name
+        true
+      else 
+        false
+      end
+    end
+  end
 end
