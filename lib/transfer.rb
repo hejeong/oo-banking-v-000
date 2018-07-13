@@ -9,6 +9,6 @@ class Transfer
   end
   
   def valid?
-    BankAccount.all.
+    BankAccount.all[self.sender.to_sym].valid
   end
 end
