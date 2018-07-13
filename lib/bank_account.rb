@@ -33,4 +33,9 @@ class BankAccount
       false
     end
   end
+  
+  # class methods
+  def self.all
+    @@accounts
+  end
 end
