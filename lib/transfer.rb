@@ -12,6 +12,7 @@ class Transfer
   def valid?
     sender = BankAccount.find_account(self.sender)
     receiver = BankAccount.find_account(self.receiver)
+    binding.pry
     if sender.valid? && receiver.valid?
       true
     else
