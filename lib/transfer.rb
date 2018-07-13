@@ -17,6 +17,5 @@ class Transfer
     else
       false
     end
-    binding.pry
   end
 end
