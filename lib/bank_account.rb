@@ -11,7 +11,7 @@ class BankAccount
     @name = name
     @balance = 1000
     @status = "open"
-    @@accounts[] self
+    @@accounts[name.to_sym] self
   end
   
   def close_account
