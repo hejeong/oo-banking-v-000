@@ -1,6 +1,6 @@
 class BankAccount
   # class variable
-  @@accounts = []
+  @@accounts = {}
   
   # attribute accessors/readers
   attr_accessor :balance, :status
@@ -11,7 +11,7 @@ class BankAccount
     @name = name
     @balance = 1000
     @status = "open"
-    @@accounts << self
+    @@accounts[] self
   end
   
   def close_account
