@@ -18,6 +18,6 @@ class Transfer
   end
   
   def execute_transaction
-    
+    self.status = 'successful'
   end 
 end
