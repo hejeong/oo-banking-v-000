@@ -35,13 +35,4 @@ class BankAccount
   end
   
   # class methods
-  def self.find_account(name)
-    @@accounts.detect do |account|
-      if account.name == name
-        true
-      else 
-        false
-      end
-    end
-  end
 end
