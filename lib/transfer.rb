@@ -10,7 +10,7 @@ class Transfer
   
   def valid?
     bank_accounts = BankAccount.all
-    if bank_accounts[self.sender.to_sym].valid? && bank_accounts[self.receiver._to_sym].valid?
+    if bank_accounts[self.sender.to_sym].valid? && bank_accounts[self.receiver.to_sym].valid?
       true
     else
       false 
