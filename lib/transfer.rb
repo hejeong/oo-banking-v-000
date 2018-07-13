@@ -9,6 +9,6 @@ class Transfer
   end
   
   def valid?
-    @sender
+    BankAccount.all.
   end
 end
