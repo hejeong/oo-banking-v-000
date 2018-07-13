@@ -1,8 +1,12 @@
 class BankAccount
-  attr_accessor :balance, :status
-  attr_reader :name
+  # class variable
   @@accounts = []
   
+  # attribute accessors/readers
+  attr_accessor :balance, :status
+  attr_reader :name
+  
+  # instance methods
   def initialize(name)
     @name = name
     @balance = 1000
